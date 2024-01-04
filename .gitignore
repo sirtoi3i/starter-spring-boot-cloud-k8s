@@ -3,6 +3,7 @@
 /.idea/$PRODUCT_WORKSPACE_FILE$
 /.idea/.gitignore
 /.idea/compiler.xml
+/*-service/target
 /department-service/department-service.iml
 /employee-service/employee-service.iml
 /.idea/encodings.xml

@@ -17,9 +17,9 @@ build:
         project: employee-service
         args:
           - -DskipTests
-    - image: piomin/gateway
-      jib:
-        project: gateway-service
+    # - image: piomin/gateway
+    #   jib:
+    #     project: gateway-service
     - image: piomin/organization
       jib:
         project: organization-service
@@ -33,7 +33,7 @@ manifests:
     - admin-service/k8s/*.yaml
     - department-service/k8s/*.yaml
     - employee-service/k8s/*.yaml
-    - gateway-service/k8s/*.yaml
+    #- gateway-service/k8s/*.yaml
     - organization-service/k8s/*.yaml
 deploy:
   kubectl: {}

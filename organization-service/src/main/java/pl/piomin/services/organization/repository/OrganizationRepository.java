@@ -1,8 +1,8 @@
-package pl.piomin.services.organization.repository;
+package de.tbo.services.organization.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import pl.piomin.services.organization.model.Organization;
+import de.tbo.services.organization.model.Organization;
 
 public interface OrganizationRepository extends CrudRepository<Organization, String> {
 	

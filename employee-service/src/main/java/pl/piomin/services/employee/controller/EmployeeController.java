@@ -1,4 +1,4 @@
-package pl.piomin.services.employee.controller;
+package de.tbo.services.employee.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import pl.piomin.services.employee.model.Employee;
-import pl.piomin.services.employee.repository.EmployeeRepository;
+import de.tbo.services.employee.model.Employee;
+import de.tbo.services.employee.repository.EmployeeRepository;
 
 @RestController
 public class EmployeeController {

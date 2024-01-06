@@ -167,5 +167,5 @@
 /.idea/misc.xml
 /.idea/modules.xml
 /organization-service/organization-service.iml
-/.idea/sample-spring-microservices-kubernetes.iml
+/.idea/starter-spring-boot-cloud-k8s.iml
 /.idea/vcs.xml

@@ -1,4 +1,4 @@
-package pl.piomin.services.organization.model;
+package de.tbo.services.organization.model;
 
 public class Employee {
 

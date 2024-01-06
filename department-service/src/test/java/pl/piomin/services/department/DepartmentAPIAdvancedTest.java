@@ -1,4 +1,4 @@
-package pl.piomin.services.department;
+package de.tbo.services.department;
 
 import io.fabric8.kubernetes.api.model.*;
 import io.fabric8.kubernetes.client.Config;
@@ -19,8 +19,8 @@ import org.springframework.test.context.ActiveProfiles;
 import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
-import pl.piomin.services.department.model.Department;
-import pl.piomin.services.department.model.Employee;
+import de.tbo.services.department.model.Department;
+import de.tbo.services.department.model.Employee;
 
 import java.util.ArrayList;
 import java.util.HashMap;

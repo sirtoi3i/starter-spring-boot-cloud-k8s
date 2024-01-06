@@ -1,13 +1,13 @@
-package pl.piomin.services.organization.controller;
+package de.tbo.services.organization.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.piomin.services.organization.client.DepartmentClient;
-import pl.piomin.services.organization.client.EmployeeClient;
-import pl.piomin.services.organization.model.Organization;
-import pl.piomin.services.organization.repository.OrganizationRepository;
+import de.tbo.services.organization.client.DepartmentClient;
+import de.tbo.services.organization.client.EmployeeClient;
+import de.tbo.services.organization.model.Organization;
+import de.tbo.services.organization.repository.OrganizationRepository;
 
 @RestController
 public class OrganizationController {

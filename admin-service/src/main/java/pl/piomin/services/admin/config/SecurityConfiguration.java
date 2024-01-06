@@ -1,4 +1,4 @@
-package pl.piomin.services.admin.config;
+package de.tbo.services.admin.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

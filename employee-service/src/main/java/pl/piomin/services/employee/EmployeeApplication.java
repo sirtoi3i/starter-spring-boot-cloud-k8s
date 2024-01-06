@@ -1,4 +1,4 @@
-package pl.piomin.services.employee;
+package de.tbo.services.employee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

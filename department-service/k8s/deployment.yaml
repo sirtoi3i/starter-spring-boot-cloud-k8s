@@ -17,7 +17,7 @@ spec:
       serviceAccountName: spring-cloud-kubernetes
       containers:
       - name: department
-        image: piomin/department
+        image: tbo/department
         ports:
         - containerPort: 8080
         env:

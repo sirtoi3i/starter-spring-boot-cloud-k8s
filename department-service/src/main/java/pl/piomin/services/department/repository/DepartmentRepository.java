@@ -1,10 +1,10 @@
-package pl.piomin.services.department.repository;
+package de.tbo.services.department.repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import pl.piomin.services.department.model.Department;
+import de.tbo.services.department.model.Department;
 
 public interface DepartmentRepository extends CrudRepository<Department, String> {
 

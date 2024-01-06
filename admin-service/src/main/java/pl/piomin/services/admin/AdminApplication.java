@@ -1,4 +1,4 @@
-package pl.piomin.services.admin;
+package de.tbo.services.admin;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 

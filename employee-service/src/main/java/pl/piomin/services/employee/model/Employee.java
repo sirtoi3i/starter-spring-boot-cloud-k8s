@@ -1,4 +1,4 @@
-package pl.piomin.services.employee.model;
+package de.tbo.services.employee.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

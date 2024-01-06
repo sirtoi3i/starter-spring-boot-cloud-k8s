@@ -1,9 +1,9 @@
-package pl.piomin.services.department.client;
+package de.tbo.services.department.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import pl.piomin.services.department.model.Employee;
+import de.tbo.services.department.model.Employee;
 
 import java.util.List;
 

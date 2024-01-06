@@ -1,4 +1,4 @@
-package pl.piomin.services.department.controller;
+package de.tbo.services.department.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,10 +6,10 @@ import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JCircuit
 import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JCircuitBreakerFactory;
 import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
 import org.springframework.web.bind.annotation.*;
-import pl.piomin.services.department.client.EmployeeClient;
-import pl.piomin.services.department.model.Department;
-import pl.piomin.services.department.model.Employee;
-import pl.piomin.services.department.repository.DepartmentRepository;
+import de.tbo.services.department.client.EmployeeClient;
+import de.tbo.services.department.model.Department;
+import de.tbo.services.department.model.Employee;
+import de.tbo.services.department.repository.DepartmentRepository;
 
 import java.util.List;
 

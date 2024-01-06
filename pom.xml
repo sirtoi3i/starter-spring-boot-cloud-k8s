@@ -5,22 +5,24 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.5</version>
+        <version>3.2.1</version>
         <relativePath />
     </parent>
 
-    <groupId>pl.piomin.services</groupId>
-    <artifactId>sample-spring-microservices-kubernetes</artifactId>
+    <groupId>de.tbo.services</groupId>
+    <artifactId>starter-spring-boot-cloud-k8s</artifactId>
     <version>1.1</version>
     <packaging>pom</packaging>
 
     <properties>
         <java.version>17</java.version>
         <springdoc.version>2.3.0</springdoc.version>
-        <spring-cloud.version>2022.0.4</spring-cloud.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <jib-maven-plugin.version>3.4.0</jib-maven-plugin.version>
         <testcontainers.version>1.19.3</testcontainers.version>
-        <sonar.projectKey>piomin_spring-microservices-kubernetes</sonar.projectKey>
-        <sonar.organization>piomin</sonar.organization>
+        <spring-boot-admin-starter-server.version>3.2.1</spring-boot-admin-starter-server.version>
+        <sonar.projectKey>tbo_spring-microservices-kubernetes</sonar.projectKey>
+        <sonar.organization>tbo</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
@@ -29,7 +31,6 @@
         <module>employee-service</module>
         <module>department-service</module>
         <module>organization-service</module>
-        <module>gateway-service</module>
     </modules>
 
     <dependencyManagement>
@@ -56,31 +57,13 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>${jib-maven-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.11</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+
         </plugins>
     </build>
 

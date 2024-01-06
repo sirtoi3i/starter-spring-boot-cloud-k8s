@@ -7,3 +7,11 @@ spring:
         all-namespaces: true
         service-labels:
           spring-boot: true
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+  level:
+    org.springframework.cloud.kubernetes: TRACE
+
+
+

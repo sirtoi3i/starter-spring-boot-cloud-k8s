@@ -17,6 +17,6 @@ spec:
       serviceAccountName: spring-cloud-kubernetes
       containers:
       - name: gateway
-        image: piomin/gateway
+        image: tbo/gateway
         ports:
         - containerPort: 8080

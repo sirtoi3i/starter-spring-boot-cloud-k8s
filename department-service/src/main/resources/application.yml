@@ -13,7 +13,7 @@ logging:
   pattern: 
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
   level:
-    org.springframework.cloud.kubernetes: TRACE
+    org.springframework.cloud.kubernetes: ERROR
 
 management:
   endpoints:

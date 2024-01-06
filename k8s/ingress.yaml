@@ -29,4 +29,18 @@ spec:
               service:
                 name: organization
                 port:
-                  number: 8080                
+                  number: 8080
+          - path: /gateway
+            pathType: Prefix
+            backend:
+              service:
+                name: gateway
+                port:
+                  number: 8080
+          - path: /admin
+            pathType: Prefix
+            backend:
+              service:
+                name: admin
+                port:
+                  number: 8080

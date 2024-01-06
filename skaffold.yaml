@@ -7,6 +7,9 @@ build:
     - image: tbo/admin
       jib:
         project: admin-service
+    - image: tbo/gateway
+      jib:
+        project: gateway-service
     - image: tbo/department
       jib:
         project: department-service
@@ -31,5 +34,6 @@ manifests:
     - department-service/k8s/*.yaml
     - employee-service/k8s/*.yaml
     - organization-service/k8s/*.yaml
+    - gateway-service/k8s/*.yaml
 deploy:
   kubectl: {}
